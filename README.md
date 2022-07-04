@@ -20,7 +20,7 @@ Download data from this [link](https://www.aliyundrive.com/s/urpiRn6uaTo) and pl
 ## Usage
 Execute the following bash commands in the same directory where the code resides:
   ```bash
-  $ python main_ggc.py -l i --hop 2 -ess averVolume -layer 2 --pooling max --hidden_dim 128 --batch_size 32 --lr 0.001 --dropout 0.2 -undir 1 --aug edgeRemove+identity --aug_prob1 0.1
+  $ python main_ggc.py -l i --hop 2 -ess Volume -layer 2 --pooling max --hidden_dim 128 --batch_size 32 --lr 0.001 --dropout 0.2 -undir 1 --aug edgeRemove+identity --aug_prob1 0.1
   ```
 More parameter settings can be found in 'utils/parameters.py'.
 
