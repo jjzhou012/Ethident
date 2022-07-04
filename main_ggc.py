@@ -22,7 +22,6 @@ import torch_geometric.transforms as T
 from torch_geometric.data import DataLoader
 
 from utils.parameters import get_parser
-from utils.logger import Logger
 from utils.dataset import MyBlockChain_TUDataset
 from utils.transform import *
 from utils.tools import setup_seed, EarlyStopping, data_split
@@ -47,33 +46,7 @@ label = label_abbreviation[args.label]  # target account label
 # path
 data_path = osp.join(osp.dirname(osp.realpath(__file__)), f'{args.root}',
                      '{}/{}/{}hop-{}/{}'.format(args.dataType, label, args.hop, args.topk, args.edge_sample_strategy))
-result_path = 'result/ggc/{}/{}/{}hop-{}/{}/'.format(args.dataType, label, args.hop, args.topk, args.edge_sample_strategy)
-if not osp.exists(result_path): os.makedirs(result_path)
-result_file = '{}-{}-{}_undirected-{}_model-{}_layer-{}_pooling-{}_hidden-{}_batchsize-{}_lr-{}_drop-{}_minDelta-{}_aug-{}_augprob-{}_lambda-{}.txt'.format(
-    args.use_node_attribute,
-    args.use_node_labeling,
-    args.use_edge_attribute,
-    bool(args.to_undirected),
-    args.model,
-    args.num_layers,
-    args.pooling,
-    args.hidden_dim,
-    args.batch_size,
-    args.lr,
-    args.dropout,
-    args.early_stop_mindelta,
-    args.aug,
-    args.aug_prob1,
-    args.Lambda
-)
-print(data_path)
-print(result_path)
-print(result_file)
 
-# log save setting
-path = osp.abspath(osp.dirname(__file__))
-type = sys.getfilesystemencoding()
-sys.stdout = Logger(result_path + result_file)
 
 # load dataset
 
