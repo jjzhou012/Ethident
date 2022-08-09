@@ -8,8 +8,8 @@ This is a Python implementation of Ethident, as described in the following:
 For hardware configuration, the experiments are conducted at Ubuntu 18.04.5 LTS with the Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz, and NVIDIA Tesla V100S GPU (with 40GB memory each).
 For software configuration, all model are implemented in
 - Python 3.7
-- PyTorch 2.0.3,
-- Pytorch-Geometric 1.8.0
+- Pytorch-Geometric 2.0.3
+- Pytorch 1.8.0
 - Scikit-learn 0.24.1
 - CUDA 10.2
 
