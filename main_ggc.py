@@ -200,7 +200,6 @@ def test(loader):
 # exp
 f1_list = []
 
-print(f'\nExp: {1}')
 train_dataset_v1 = dataset_v1[train_splits[0]]
 train_dataset_v2 = dataset_v2[train_splits[0]]
 train_dataset_raw = dataset_raw[train_splits[0]]

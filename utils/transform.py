@@ -8,19 +8,14 @@
 @desc: custom data transform class
 '''
 import torch
-from torch.distributions.bernoulli import Bernoulli
-import numpy as np
-import random
-from torch_sparse import SparseTensor
+
 from torch_geometric.utils import dropout_adj, degree, to_undirected, subgraph
-from torch_geometric.nn import knn_graph
 from torch_geometric.data import Data, HeteroData
 from torch_geometric.transforms import BaseTransform
 
 from typing import List, Optional, Tuple, NamedTuple, Union, Callable
 from torch import Tensor
 
-from utils.utils import get_topK
 
 
 class ColumnNormalizeFeatures(BaseTransform):

@@ -68,17 +68,3 @@ def dropout_adj(edge_index, edge_attr=None, p=0.5, force_undirected=False,
         edge_index = torch.stack([row, col], dim=0)
 
     return edge_index, edge_attr
-
-
-def get_topK(entries: torch.Tensor,
-             k: float,
-             weight: torch.Tensor = None,
-             get_largest: bool = True) -> torch.Tensor:
-    w = weight if weight.any() else entries
-    num = int(entries.size(0) * k) if k < 1 else int(k)
-
-    if num >= len(entries):
-        return entries
-
-    rank = torch.argsort(w)
-    return entries[rank][-num:] if get_largest else entries[rank][:num]
