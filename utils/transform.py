@@ -162,7 +162,7 @@ class MyAug_NodeDropping(BaseTransform):
         # data.edge_attr = None
         # batch = data.batch if 'batch' in data else None
 
-        keep_mask = torch.empty(size=(data.x.size(0),), dtype=torch.float32).uniform_(0, 1) > 1 - self.prob
+        keep_mask = torch.empty(size=(data.x.size(0),), dtype=torch.float32).uniform_(0, 1) > self.prob
         keep_mask[0] = True
 
         if keep_mask.sum().item() < 2:
