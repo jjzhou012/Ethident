@@ -206,7 +206,7 @@ train_dataset_raw = dataset_raw[train_splits[0]]
 val_dataset = dataset_raw[val_splits[0]]
 test_dataset = dataset_raw[test_splits[0]]
 
-print('Loading training data ... ')
+print('\n\n\nLoading training data ... ')
 train_loader = DataLoader(list(zip(train_dataset_v1, train_dataset_v2, train_dataset_raw)), batch_size=args.batch_size, shuffle=True,
                           num_workers=1)
 print('Loading val data ... ')
