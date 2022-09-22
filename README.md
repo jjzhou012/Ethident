@@ -15,7 +15,7 @@ For software configuration, all model are implemented in
 
 
 ## Data
-Download data from this [link](https://www.aliyundrive.com/s/urpiRn6uaTo) and place it under the 'data/' path.
+Download data from this [page](https://jjzhou.notion.site/Ethident-Data-861199675dc7454eb36157eeee09cf5b) and place it under the 'data/' path.
 
 ## Usage
 Execute the following bash commands in the same directory where the code resides:
