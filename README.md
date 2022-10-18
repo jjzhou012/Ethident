@@ -15,7 +15,7 @@ For software configuration, all model are implemented in
 
 
 ## Data
-Download data from this [page](https://zjuteducn-my.sharepoint.com/:f:/g/personal/jjzhou_zjut_edu_cn/Errr8vUAhWBPpBKTHqjhoeMBFl_OtoRPftJYw3Ap3ssUMg) and place it under the 'data/' path.
+Download data from this [page](https://www.notion.so/jjzhou/Ethident-Data-861199675dc7454eb36157eeee09cf5b) and place it under the 'data/' path.
 
 
 ## Usage
