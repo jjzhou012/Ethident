@@ -15,8 +15,9 @@ For software configuration, all model are implemented in
 
 
 ## Data
-Download data from this [page](https://www.notion.so/jjzhou/Ethident-Data-861199675dc7454eb36157eeee09cf5b) and place it under the 'data/' path.
+Download data in PYG format from this [page](https://www.notion.so/jjzhou/Ethident-Data-861199675dc7454eb36157eeee09cf5b) and place it under the 'data/' path.
 
+Note that we store the raw block data (downloaded from the xblock platform) in the neo4j database, which is huge, so we are not ready to publish it. You can download the raw block data from the xblock platform.
 
 ## Usage
 Execute the following bash commands in the same directory where the code resides:
