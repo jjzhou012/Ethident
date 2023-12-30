@@ -33,10 +33,13 @@ If you find this work useful, please cite the following:
 
 ```bib
 @article{zhou2022behavior,
-  title={Behavior-aware Account De-anonymization on Ethereum Interaction Graph},
+  title={Behavior-aware account de-anonymization on ethereum interaction graph},
   author={Zhou, Jiajun and Hu, Chenkai and Chi, Jianlei and Wu, Jiajing and Shen, Meng and Xuan, Qi},
-  journal={arXiv preprint arXiv:2203.09360},
-  year={2022}
+  journal={IEEE Transactions on Information Forensics and Security},
+  volume={17},
+  pages={3433--3448},
+  year={2022},
+  publisher={IEEE}
 }
 ```
 
