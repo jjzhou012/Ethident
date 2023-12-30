@@ -185,7 +185,7 @@ def main():
         else:
             pos = label2account[label]
         pos = [account for account in tqdm(pos) if account not in black_list]
-        # 防止卡顿
+        #
         if label not in ['mining', 'exchange']:
             pos = [account for account in tqdm(pos) if neo4j_check_isolate(account, neo4j_G)]
         # get neg sample
